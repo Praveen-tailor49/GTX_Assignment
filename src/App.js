@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { Route, Routes } from "react-router-dom"
 import PropertyList from './PropertyList'
 import Details from './Details'
+import NavBar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <>
+      <NavBar/>
       <Routes>
 
         <Route path='/' element={<PropertyList showDetail={showDetail}/>}/>

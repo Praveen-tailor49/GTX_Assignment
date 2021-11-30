@@ -1,6 +1,5 @@
 import React from 'react'
 import List from '../JsonFile'
-import NavBar from './Navbar'
 import { Link } from "react-router-dom"
 import { Button, Card } from 'react-bootstrap';
 
@@ -8,8 +7,7 @@ import { Button, Card } from 'react-bootstrap';
 
 	return(
 		<>
-			<NavBar/>
-			<div style={{ display:'grid', gridTemplateColumns:'auto auto auto auto'}}>
+			<div style={{ display:'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', }}>
 				{
 					List.map((list, id)=>{
 						return(

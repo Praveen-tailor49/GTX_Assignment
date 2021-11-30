@@ -1,5 +1,4 @@
 import React from 'react'
-import NavBar from './components/Navbar'
 import { Table, ButtonGroup, Button } from 'react-bootstrap';
 
 
@@ -7,8 +6,6 @@ const Details = ({tenantsData}) =>{
 
 	return(
 			<>
-				<NavBar/>
-
 				<Table striped bordered hover style={{marginTop:'30px'}}>
 				  <thead>
 				    <tr>
