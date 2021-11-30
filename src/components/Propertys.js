@@ -1,13 +1,13 @@
 import React from 'react'
 import List from '../JsonFile'
 import { Link } from "react-router-dom"
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card, Container } from 'react-bootstrap';
 
  const PropertyList = ({showDetail}) => {
 
 	return(
 		<>
-			<div style={{ display:'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', }}>
+			<Container  style={{ display:'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(17.45rem, 1fr))', justifyItems: 'center' }}>
 				{
 					List.map((list, id)=>{
 						return(
@@ -26,7 +26,7 @@ import { Button, Card } from 'react-bootstrap';
 							)
 					})
 				}
-			</div>
+			</Container>
 		</>
 	)
 }
